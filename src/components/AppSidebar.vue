@@ -1,8 +1,8 @@
 <template>
   <aside>
-    <AppSidebarButton title="Home">
+    <AppSidebarButton v-for="button in sidebarButtons" :title="button.title" :key="button.id">
       <template #icon>
-        <i class="fa-solid fa-house"></i>
+        <i :class="button.icon"></i>
       </template>
     </AppSidebarButton>
   </aside>
@@ -15,7 +15,30 @@ export default {
   name: "AppSidebar",
   components: { AppSidebarButton },
   data() {
-    
+    return {
+      sidebarButtons: [
+      {
+        id: 1,
+        icon: "fa-solid fa-house",
+        title: "Home"
+      },
+      {
+        id: 2,
+        icon: "fa-solid fa-file-video",
+        title: "Shorts"
+      },
+      {
+        id: 3,
+        icon: "fa-solid fa-clapperboard",
+        title: "Subscriptions"
+      },
+      {
+        id: 4,
+        icon: "fa-solid fa-film",
+        title: "Library"
+      },
+    ]
+    };
   }
 }
 </script>
