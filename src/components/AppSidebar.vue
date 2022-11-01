@@ -1,11 +1,11 @@
 <template>
-  <aside>
+  <div class="side-bar-container">
     <AppSidebarButton v-for="button in sidebarButtons" :title="button.title" :key="button.id">
       <template #icon>
         <i :class="button.icon"></i>
       </template>
     </AppSidebarButton>
-  </aside>
+  </div>
 </template>
 
 <script>
@@ -46,16 +46,10 @@ export default {
 <style scoped lang="scss">
 @import "../assets/scss/_main.scss";
 
-aside {
+div.side-bar-container {
   width: $sidebar-width;
   height: 100%;
   background-color: $base-dark-bg;
   padding: 4px;
-}
-
-@media only screen and (max-width: 790px) {
-  aside {
-    display: none;
-  }
 }
 </style>

@@ -1,5 +1,12 @@
 <template>
-  <AppSidebar/>
+  <div class="page-playlist-container">
+    <aside>
+      <AppSidebar/>
+    </aside>
+    <main>
+
+    </main>
+  </div>
 </template>
 
 <script>
@@ -12,6 +19,17 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
+@import "../assets/scss/_main.scss";
+
+div.page-playlist-container, aside {
+  height: 100%;
+}
+
+@media only screen and (max-width: 790px) {
+  aside {
+    display: none;
+  }
+}
 </style>
 
