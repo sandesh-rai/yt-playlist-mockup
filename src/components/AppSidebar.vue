@@ -50,7 +50,7 @@ aside {
   width: $sidebar-width;
   height: 100%;
   background-color: $base-dark-bg;
-  padding: 0 4px;
+  padding: 4px;
 }
 
 @media only screen and (max-width: 790px) {

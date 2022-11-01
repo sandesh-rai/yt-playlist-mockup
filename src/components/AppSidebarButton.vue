@@ -28,9 +28,11 @@ button.app-sidebar-button {
     padding: 16px 0px 14px;
     border-radius: 10px;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
-button.app-sidebar-button:hover,  button.app-sidebar-button:active {
+button.app-sidebar-button:hover,  button.app-sidebar-button:active, button.app-sidebar-button:focus {
     background-color: $button-dark-active;
     width: 100%;
     padding: 16px 0px 14px;
