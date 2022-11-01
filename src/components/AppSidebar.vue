@@ -48,9 +48,14 @@ export default {
 
 aside {
   width: $sidebar-width;
-  height: 100vw;
+  height: 100%;
   background-color: $base-dark-bg;
   padding: 0 4px;
 }
 
+@media only screen and (max-width: 790px) {
+  aside {
+    display: none;
+  }
+}
 </style>
