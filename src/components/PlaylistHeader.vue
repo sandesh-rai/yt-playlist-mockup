@@ -1,7 +1,7 @@
 <template>
   <div class="playlist-header-container main-playlist-container">
         <div class="playlist-header-container--row">
-            <div>
+            <div class="playlist-image">
                 <img src="../assets/img/mountains-royalty-free.png" alt="header-mountain-image"/>
             </div>
 
@@ -61,8 +61,15 @@ div.playlist-header-container--row > button {
     cursor: pointer;
 }
 
-div.playlist-header-container--row > div > img {
+div.playlist-image {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div.playlist-image > img {
     border-radius: 10px;
+    width: 100%;
+    height: 175px;
 }
 
 div.playlist-header-container--row > header {
