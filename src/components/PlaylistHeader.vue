@@ -2,7 +2,6 @@
   <div class="playlist-header-container main-playlist-container">
         <div class="playlist-header-container--row">
             <div>
-                <div></div>
                 <img src="../assets/img/mountains-royalty-free.png" alt="header-mountain-image"/>
             </div>
 
@@ -37,13 +36,14 @@ div.playlist-header-container--row {
 }
 
 div.playlist-header-container--row > *:not(button), div.playlist-header-container--row > div > img {
-    height: 190px;
-    width: 336px;
     color: #fff;
+    max-width: 336px;
+    flex-grow: 1;
 }
 
 div.playlist-header-container--row > button {
     width: auto;
+    cursor: pointer;
 }
 
 div.playlist-header-container--row > div > img {
