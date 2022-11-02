@@ -67,6 +67,7 @@ div.video-bar__video-data > a {
     color: #aaa;
     text-decoration: none;
     text-align: left;
+    width: 0;
 }
 
 div.video-bar__video-data > a:hover {

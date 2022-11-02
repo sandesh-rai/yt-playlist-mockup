@@ -10,7 +10,7 @@
                 <div class="playlist-header__meta-data-action-bar-container">
                     <div class="playlist-header__meta-data">
                         <h4>Username123</h4>
-                        <p><span style="margin-right: 4px">40 videos </span><span>Last updated on 25 Dec 2021</span></p>
+                        <p><span style="margin-right: 4px">20 videos </span><span>Last updated on 25 Dec 2021</span></p>
                     </div>
                     <div class="playlist-header__action-bar">
                         <button class="button-transparent">
