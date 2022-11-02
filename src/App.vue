@@ -16,6 +16,7 @@ export default {
 <style>
 html {
   height: 100%;
+  font-size: 10px;
 }
 
 body {

@@ -3,18 +3,22 @@
     <aside>
       <AppSidebar/>
     </aside>
-    <main>
 
+    <main>
+      <PlaylistHeader/>
+      <PlaylistContent class="playlist-content"/>
     </main>
   </div>
 </template>
 
 <script>
 import AppSidebar from './AppSidebar.vue';
+import PlaylistHeader from './PlaylistHeader.vue';
+import PlaylistContent from './PlaylistContent.vue';
 
 export default {
     name: "PagePlaylist",
-    components: { AppSidebar }
+    components: { AppSidebar, PlaylistHeader, PlaylistContent }
 }
 </script>
 
@@ -24,6 +28,17 @@ export default {
 
 div.page-playlist-container, aside {
   height: 100%;
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.playlist-content {
+  flex-grow: 1;
 }
 
 @media only screen and (max-width: 790px) {
