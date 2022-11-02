@@ -29,6 +29,7 @@ button.video-bar {
     border-top-right-radius: 10px;  
     border-bottom-right-radius: 10px; 
     background-color: $base-dark-bg;  
+    border: none;
 }
 
 button.video-bar:hover, button.video-bar:active, button.video-bar:focus-visible {
@@ -45,6 +46,8 @@ div.video-bar__video-data {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    flex-grow: 1;
+    margin-left: 8px;
 }
 
 div.video-bar__video-data > h5 {
@@ -57,6 +60,7 @@ div.video-bar__video-data > h5 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
+    text-align: left;
 }
 
 div.video-bar__video-data > a {
