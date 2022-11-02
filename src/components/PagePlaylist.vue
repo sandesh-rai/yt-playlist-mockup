@@ -45,6 +45,7 @@ main {
 .main--playlist-content {
   background-color: $base-dark-bg;
   flex-grow: 1;
+  padding: 0px 24px;
 }
 
 @media only screen and (max-width: 790px) {

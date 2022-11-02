@@ -1,6 +1,6 @@
 <template>
   <div class="playlist-header-container main-playlist-container">
-        <div class="playlist-header-container--row">
+        <div class="playlist-header-container--row playlist-header-container--row-top">
             <div class="playlist-image">
                 <img src="../assets/img/mountains-royalty-free.png" alt="header-mountain-image"/>
             </div>
@@ -10,7 +10,7 @@
                 <div class="playlist-header__meta-data-action-bar-container">
                     <div class="playlist-header__meta-data">
                         <h4>Username123</h4>
-                        <p><span style="margin-right: 4px">20 videos </span><span>Last updated on 25 Dec 2021</span></p>
+                        <p><span style="margin-right: 4px">20 videos </span><span>Last updated on 01 Nov 22</span></p>
                     </div>
                     <div class="playlist-header__action-bar">
                         <button class="button-transparent">
@@ -68,7 +68,7 @@ div.playlist-image {
 
 div.playlist-image > img {
     border-radius: 10px;
-    width: 100%;
+    width: 350px;
     height: 175px;
 }
 
@@ -83,11 +83,11 @@ div.playlist-header-container--row > header > h2 {
     font-size: 2.8rem;
     line-height: 3.8rem;
     font-weight: 700;
-    margin: 0;
+    margin: 12px 0;
 }
 
 div.playlist-header__meta-data-action-bar-container {
-    margin-top: 16px;
+    margin-top: 16px 0px 12px;
     display: flex;
 }
 
@@ -113,6 +113,7 @@ div.playlist-header__meta-data > p {
 
 div.playlist-header__action-bar {
     display: flex;
+    align-items: flex-end;
 }
 
 div.playlist-header__action-bar > button {
@@ -168,6 +169,29 @@ button.button--shuffle {
 button.button--play-all > i, button.button--shuffle > i{
     margin-left: -6px;
     margin-right: 6px;
+}
+
+@media screen and (max-width: 720px){
+    div.playlist-header-container--row-top {
+        flex-direction: column;
+    }
+
+    div.playlist-image {
+        margin: 0 auto 16px;
+    }
+
+    div.playlist-header-container--row > *:not(button):not(img) {
+        max-width: none;
+    }
+
+    div.playlist-image > img {
+        width: 100%;
+    }
+
+    div.playlist-header-container--row > header {
+        margin: 0;
+    }
+
 }
 </style>
 
