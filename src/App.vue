@@ -1,14 +1,19 @@
 <template>
-    <PagePlaylist/>
+    <div style="height: 100%">
+      <AppNavbar/>
+      <PagePlaylist/>
+    </div>
 </template>
 
 <script>
 import PagePlaylist from './components/PagePlaylist.vue'
+import AppNavbar from './components/AppNavbar.vue'
 
 export default {
   name: 'App',
   components: {
-    PagePlaylist
+    PagePlaylist,
+    AppNavbar
   }
 }
 </script>
