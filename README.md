@@ -1,5 +1,5 @@
 # Getting Started - YT Playlist Mockup
-Frontend mockup of the new YT Playlist as part of a practice project. 
+Frontend mockup of the new YT Playlist as part of a practice project with Vue. All components are custom-made without any 3rd party libraries.
 
 ### Installing
 
