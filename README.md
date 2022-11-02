@@ -1,24 +1,30 @@
-# yt-playlist-clone
+# Getting Started - YT Playlist Mockup
+Frontend mockup of the new YT Playlist as part of a practice project. 
 
-## Project setup
-```
-npm install
+### Installing
+
+You can clone this repository using __Git__:
+```bash
+git clone https://github.com/sandesh-rai/gmbn-home-mobile.git
 ```
 
-### Compiles and hot-reloads for development
+Or download the repository [here](https://github.com/sandesh-rai/gmbn-home-mobile/archive/refs/heads/main.zip)
+
+---
+
+Open a terminal and type, inside the directory:
+```bash
+npm install 
+# OR
+yarn install
 ```
+
+for installing all the dependencies. At the end type, in the same folder:
+```bash
 npm run serve
+# OR
+yarn serve
 ```
+for running the Vue.js development server. It will be up and running at this address: http://localhost:8080
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+---
