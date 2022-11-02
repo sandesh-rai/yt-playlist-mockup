@@ -1,19 +1,14 @@
 <template>
   <div class="playlist-content-container main-playlist-container">
-    <button>
-      <div class="img-here">
-
-      </div>
-      <div class="content-here">
-        THERE NEEDS TO BE VIDEO LINK HERE
-      </div>
-    </button>
+      <VideoBar v-for="index in 20" :key="index" :videoNumber="index"/>
   </div>
 </template>
 
 <script>
+import VideoBar from './PlaylistContentVideoBar';
 export default {
-    name: "PlaylistContent"
+  name: "PlaylistContent",
+  components: { VideoBar }
 }
 </script>
 
