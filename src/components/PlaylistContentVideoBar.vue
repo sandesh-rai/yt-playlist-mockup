@@ -1,5 +1,6 @@
 <template>
     <button class="video-bar">
+        <p>{{videoNumber}}</p>
         <img class="video-bar__thumbnail" src="../assets/img/mountains-royalty-free.png" alt="header-mountain-image"/>
         <div class="video-bar__video-data">
             <h5>{{`Example Title of Video Here ${videoNumber}`}}</h5>
@@ -26,14 +27,21 @@ export default {
 button.video-bar {
     display: flex;
     padding: 8px 0px;
-    border-top-right-radius: 10px;  
-    border-bottom-right-radius: 10px; 
+    border-radius: 10px;
     background-color: $base-dark-bg;  
     border: none;
 }
 
 button.video-bar:hover, button.video-bar:active, button.video-bar:focus-visible {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+button.video-bar > p {
+    color: #fff;
+    padding: 8px 14px 0px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    width: 1.4rem;
 }
 
 img.video-bar__thumbnail {
