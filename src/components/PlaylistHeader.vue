@@ -3,6 +3,7 @@
         <div class="playlist-header-container--row playlist-header-container--row-top">
             <div class="playlist-image">
                 <img src="../assets/img/mountains-royalty-free.png" alt="header-mountain-image"/>
+                <div class="playlist-image-overlay"><i class="fa-solid fa-play"></i> PLAY ALL</div>
             </div>
 
             <header>
@@ -64,12 +65,38 @@ div.playlist-header-container--row > button {
 div.playlist-image {
     margin-top: auto;
     margin-bottom: auto;
+    position: relative;
+}
+
+div.playlist-image:hover {
+    background-color: #000;
+    border-radius: 10px;
 }
 
 div.playlist-image > img {
     border-radius: 10px;
     width: 350px;
     height: 175px;
+    cursor: pointer;
+}
+
+div.playlist-image:hover > img {
+    opacity: 0.5;
+}
+
+div.playlist-image > div.playlist-image-overlay{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+div.playlist-image:hover > div.playlist-image-overlay{
+    opacity: 1;
 }
 
 div.playlist-header-container--row > header {
