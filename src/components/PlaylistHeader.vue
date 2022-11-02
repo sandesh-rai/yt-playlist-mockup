@@ -7,16 +7,29 @@
 
             <header>
                 <h2>Video Title Here</h2>
-                <div>
-                    <h4>Username123</h4>
-                    <p><span style="margin-right: 4px">40 videos </span><span>Last updated on 25 Dec 2021</span></p>
+                <div class="playlist-header__meta-data-action-bar-container">
+                    <div class="playlist-header__meta-data">
+                        <h4>Username123</h4>
+                        <p><span style="margin-right: 4px">40 videos </span><span>Last updated on 25 Dec 2021</span></p>
+                    </div>
+                    <div class="playlist-header__action-bar">
+                        <button class="button-transparent">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <button class="button-transparent">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                        <button class="button-transparent">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
                 </div>
             </header>
         </div>
 
         <div class="playlist-header-container--row" style="margin-top: 16px; margin-bottom: 16px">
-            <button class="button--play-all"><i class="fa-solid fa-play"></i>Play All</button>
-            <button class="button--shuffle"><i class="fa-solid fa-shuffle"></i>Shuffle</button>
+            <button class="button-white button--play-all"><i class="fa-solid fa-play"></i>Play All</button>
+            <button class="button-transparent button--shuffle"><i class="fa-solid fa-shuffle"></i>Shuffle</button>
         </div>
   </div>
 </template>
@@ -66,23 +79,62 @@ div.playlist-header-container--row > header > h2 {
     margin: 0;
 }
 
-div.playlist-header-container--row > header > div {
+div.playlist-header__meta-data-action-bar-container {
     margin-top: 16px;
+    display: flex;
 }
 
+div.playlist-header__meta-data {
+    flex-grow: 1;
+}
 
-div.playlist-header-container--row > header > div > h4 {
+div.playlist-header__meta-data > h4 {
     font-size: 1.4rem;
     line-height: 2rem;
     font-weight: 500;
     margin: 0 0 4px;
+    cursor: pointer;
 }
 
-div.playlist-header-container--row > header > div > p {
+div.playlist-header__meta-data > p {
     font-size: 1.2rem;
     line-height: 1.8rem;
     font-weight: 400;
     margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+div.playlist-header__action-bar {
+    display: flex;
+}
+
+div.playlist-header__action-bar > button {
+    border-radius: 50%;
+    height: 3.6rem;
+    width: 3.6rem;
+    margin-left: 8px;
+    font-size: 1.8rem;
+}
+
+button.button-white {
+    color: #000;
+    background-color: #fff;
+}
+
+button.button-white:hover, button.button-white:active, button.button-white:focus-visible {
+    background-color: #e6e6e6;
+}
+
+button.button-transparent {
+    border: none;
+    color: #fff;
+    background-color: rgb(255, 255, 255, 0.1);
+    cursor: pointer;
+    outline: none;
+}
+
+button.button-transparent:hover, button.button-transparent:active, button.button-transparent:focus-visible  {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 button.button--play-all, button.button--shuffle {
