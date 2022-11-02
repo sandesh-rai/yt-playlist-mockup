@@ -7,8 +7,10 @@
 
             <header>
                 <h2>Video Title Here</h2>
-                <h4>Username123</h4>
-                <p><span>40 videos</span> <span>Last updated on 25 December 2021</span></p>
+                <div>
+                    <h4>Username123</h4>
+                    <p><span style="margin-right: 4px">40 videos </span><span>Last updated on 25 Dec 2021</span></p>
+                </div>
             </header>
         </div>
 
@@ -32,12 +34,12 @@ div.playlist-header-container {
 }
 
 div.playlist-header-container--row {
-    justify-content: center;
+    justify-content: space-between;
 }
 
 div.playlist-header-container--row > *:not(button), div.playlist-header-container--row > div > img {
     color: #fff;
-    max-width: 336px;
+    max-width: 350px;
     flex-grow: 1;
 }
 
@@ -52,24 +54,35 @@ div.playlist-header-container--row > div > img {
 
 div.playlist-header-container--row > header {
     padding-left: 24px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 div.playlist-header-container--row > header > h2 {
     font-size: 2.8rem;
     line-height: 3.8rem;
     font-weight: 700;
+    margin: 0;
 }
 
-div.playlist-header-container--row > header > h4 {
+div.playlist-header-container--row > header > div {
+    margin-top: 16px;
+}
+
+
+div.playlist-header-container--row > header > div > h4 {
     font-size: 1.4rem;
     line-height: 2rem;
     font-weight: 500;
+    margin: 0 0 4px;
 }
 
-div.playlist-header-container--row > header > p {
+div.playlist-header-container--row > header > div > p {
     font-size: 1.2rem;
     line-height: 1.8rem;
     font-weight: 400;
+    margin: 0;
 }
 
 button.button--play-all, button.button--shuffle {
@@ -81,7 +94,17 @@ button.button--play-all, button.button--shuffle {
     height: 3.6rem;
     letter-spacing: 0.5px;
     border-radius: 18px;
+    border: none;
 }
+
+button.button--play-all {
+    margin-right: 4px;
+}
+
+button.button--shuffle {
+    margin-left: 4px;
+}
+
 
 button.button--play-all > i, button.button--shuffle > i{
     margin-left: -6px;
