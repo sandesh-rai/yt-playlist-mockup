@@ -33,7 +33,6 @@ div.playlist-header-container {
 }
 
 div.playlist-header-container--row {
-    display: flex;
     justify-content: center;
 }
 
@@ -94,6 +93,7 @@ button.button--play-all > i, button.button--shuffle > i{
 
 div.main-playlist-container > * {
     max-width: 720px;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
