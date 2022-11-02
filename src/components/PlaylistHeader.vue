@@ -78,6 +78,7 @@ div.playlist-image > img {
     width: 350px;
     height: 175px;
     cursor: pointer;
+    transition: opacity .2s;
 }
 
 div.playlist-image:hover > img {
