@@ -220,6 +220,10 @@ button.button--play-all > i, button.button--shuffle > i{
         margin: 0;
     }
 
+    div.playlist-header__meta-data-action-bar-container {
+        margin-bottom: 12px;
+    }
+
 }
 </style>
 
