@@ -35,6 +35,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  margin-left: $sidebar-width;
 }
 
 .main--playlist-header {
@@ -49,6 +50,10 @@ main {
 @media only screen and (max-width: 790px) {
   aside {
     display: none;
+  }
+
+  main {
+    margin-left: 0;
   }
 }
 </style>
