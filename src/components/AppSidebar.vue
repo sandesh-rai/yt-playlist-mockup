@@ -47,6 +47,7 @@ export default {
 @import "../assets/scss/_main.scss";
 
 div.side-bar-container {
+  position: fixed;
   width: $sidebar-width;
   height: 100%;
   background-color: $base-dark-bg;
