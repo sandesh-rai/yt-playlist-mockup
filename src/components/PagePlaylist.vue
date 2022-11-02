@@ -5,8 +5,8 @@
     </aside>
 
     <main>
-      <PlaylistHeader/>
-      <PlaylistContent class="playlist-content"/>
+      <PlaylistHeader class="main--playlist-header"/>
+      <PlaylistContent class="main--playlist-content"/>
     </main>
   </div>
 </template>
@@ -37,7 +37,12 @@ main {
   flex-grow: 1;
 }
 
-.playlist-content {
+.main--playlist-header {
+  background: linear-gradient(to bottom, rgba(101, 104, 164, 0.800) 0%, rgba(48, 39, 52,0.298) 33.000001%, rgba(15,15,15,1.000) 100%);
+}
+
+.main--playlist-content {
+  background-color: $base-dark-bg;
   flex-grow: 1;
 }
 

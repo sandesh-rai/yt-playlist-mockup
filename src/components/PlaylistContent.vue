@@ -1,5 +1,5 @@
 <template>
-  <div class="playlist-content-container">
+  <div class="playlist-content-container main-playlist-container">
   </div>
 </template>
 
@@ -11,8 +11,5 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_main.scss";
-div.playlist-content-container {
-    background: $base-dark-bg;
-}
 
 </style>

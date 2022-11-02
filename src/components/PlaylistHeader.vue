@@ -1,5 +1,5 @@
 <template>
-  <div class="playlist-header-container">
+  <div class="playlist-header-container main-playlist-container">
         <div class="playlist-header-container--row">
             <div>
                 <div></div>
@@ -13,7 +13,7 @@
             </header>
         </div>
 
-        <div class="playlist-header-container--row" style="margin: 16px 0">
+        <div class="playlist-header-container--row" style="margin-top: 16px; margin-bottom: 16px">
             <button class="button--play-all"><i class="fa-solid fa-play"></i>Play All</button>
             <button class="button--shuffle"><i class="fa-solid fa-shuffle"></i>Shuffle</button>
         </div>
@@ -30,7 +30,6 @@ export default {
 
 div.playlist-header-container {
     padding: 24px;
-    background: linear-gradient(to bottom, rgba(101, 104, 164, 0.800) 0%, rgba(48, 39, 52,0.298) 33.000001%, rgba(15,15,15,1.000) 100%);
 }
 
 div.playlist-header-container--row {
@@ -89,4 +88,14 @@ button.button--play-all > i, button.button--shuffle > i{
     margin-left: -6px;
     margin-right: 6px;
 }
+</style>
+
+<style>
+
+div.main-playlist-container > * {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 </style>

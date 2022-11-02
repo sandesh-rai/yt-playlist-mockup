@@ -17,6 +17,7 @@ export default {
 html {
   height: 100%;
   font-size: 10px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 body {
