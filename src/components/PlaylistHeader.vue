@@ -1,9 +1,9 @@
 <template>
   <div class="playlist-header-container main-playlist-container">
         <div class="playlist-header-container--row playlist-header-container--row-top">
-            <div class="playlist-image" @click="navigateToVideo">
+            <div class="playlist-image no-select" @click="navigateToVideo">
                 <img src="../assets/img/mountains-royalty-free.png" alt="header-mountain-image"/>
-                <div class="playlist-image-overlay"><i class="fa-solid fa-play"></i> PLAY ALL</div>
+                <div class="playlist-image-overlay no-select"><i class="fa-solid fa-play"></i> PLAY ALL</div>
             </div>
 
             <header>
@@ -29,8 +29,8 @@
         </div>
 
         <div class="playlist-header-container--row" style="margin-top: 16px; margin-bottom: 16px">
-            <button class="button-white button--play-all" @click="navigateToVideo"><i class="fa-solid fa-play"></i>Play All</button>
-            <button class="button-transparent button--shuffle" @click="navigateToVideo"><i class="fa-solid fa-shuffle"></i>Shuffle</button>
+            <button class="button-white button--play-all no-select" @click="navigateToVideo"><i class="fa-solid fa-play"></i>Play All</button>
+            <button class="button-transparent button--shuffle no-select" @click="navigateToVideo"><i class="fa-solid fa-shuffle"></i>Shuffle</button>
         </div>
   </div>
 </template>
@@ -99,6 +99,7 @@ div.playlist-image > div.playlist-image-overlay{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     font-size: 1.4rem;
+    cursor: pointer;
 }
 
 div.playlist-image:hover > div.playlist-image-overlay{
