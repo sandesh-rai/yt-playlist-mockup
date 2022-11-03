@@ -30,6 +30,7 @@ button.video-bar {
     border-radius: 10px;
     background-color: $base-dark-bg;  
     border: none;
+    cursor: pointer;
 }
 
 button.video-bar:hover, button.video-bar:active, button.video-bar:focus-visible {
@@ -53,7 +54,6 @@ img.video-bar__thumbnail {
 div.video-bar__video-data {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
     flex-grow: 1;
     margin-left: 8px;
 }

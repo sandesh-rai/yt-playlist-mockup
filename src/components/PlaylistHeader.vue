@@ -223,7 +223,40 @@ button.button--play-all > i, button.button--shuffle > i{
     div.playlist-header__meta-data-action-bar-container {
         margin-bottom: 12px;
     }
+}
 
+@media screen and (min-width: 1080px){
+    main {
+        flex-direction: row;
+    } 
+
+    div.playlist-header-container--row-top {
+        flex-direction: column;
+    }
+
+    div.playlist-header__meta-data-action-bar-container {
+        flex-direction: column;
+    }
+
+    div.playlist-header__meta-data {
+        margin-bottom: 12px;
+    }
+
+    div.playlist-header-container {
+        position: fixed;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    div.playlist-header__action-bar > button:first-child{
+        margin-left: -4px;
+    }
+
+    div.playlist-header-container--row > header {
+        padding-left: 0;
+    }
 }
 </style>
 

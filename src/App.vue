@@ -27,4 +27,10 @@ body {
   padding: 0;
   height: 100%;
 }
+
+@media screen and (min-width: 1080px){
+  html {
+    background-color: black;
+  }
+}
 </style>

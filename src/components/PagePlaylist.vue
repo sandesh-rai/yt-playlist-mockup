@@ -57,5 +57,17 @@ main {
     margin-left: 0;
   }
 }
+
+@media screen and (min-width: 1080px){
+  main {
+    flex-direction: row;
+  } 
+
+  div.main--playlist-content {
+    margin-left: 400px;
+    margin-top: 40px;
+  }
+  
+}
 </style>
 
