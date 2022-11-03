@@ -1,5 +1,5 @@
 <template>
-    <button class="video-bar">
+    <button class="video-bar" @click="navigateToVideo">
         <p>{{videoNumber}}</p>
         <img class="video-bar__thumbnail" src="../assets/img/mountains-royalty-free.png" alt="header-mountain-image"/>
         <div class="video-bar__video-data">
@@ -17,8 +17,12 @@ export default {
         videoNumber: {
             type: Number
         }
+    },
+    methods: {
+        navigateToVideo () {
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+        }
     }
-
 }
 </script>
 
