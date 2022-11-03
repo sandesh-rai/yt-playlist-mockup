@@ -5,10 +5,10 @@ Frontend mockup of the new YT Playlist as part of a practice project with Vue. A
 
 You can clone this repository using __Git__:
 ```bash
-git clone https://github.com/sandesh-rai/gmbn-home-mobile.git
+git clone https://github.com/sandesh-rai/yt-playlist-mockup.git
 ```
 
-Or download the repository [here](https://github.com/sandesh-rai/gmbn-home-mobile/archive/refs/heads/main.zip)
+Or download the repository [here](https://github.com/sandesh-rai/yt-playlist-mockup/archive/refs/heads/main.zip)
 
 ---
 
