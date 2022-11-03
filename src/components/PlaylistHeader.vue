@@ -1,7 +1,7 @@
 <template>
   <div class="playlist-header-container main-playlist-container">
         <div class="playlist-header-container--row playlist-header-container--row-top">
-            <div class="playlist-image">
+            <div class="playlist-image" @click="navigateToVideo">
                 <img src="../assets/img/mountains-royalty-free.png" alt="header-mountain-image"/>
                 <div class="playlist-image-overlay"><i class="fa-solid fa-play"></i> PLAY ALL</div>
             </div>
@@ -29,15 +29,20 @@
         </div>
 
         <div class="playlist-header-container--row" style="margin-top: 16px; margin-bottom: 16px">
-            <button class="button-white button--play-all"><i class="fa-solid fa-play"></i>Play All</button>
-            <button class="button-transparent button--shuffle"><i class="fa-solid fa-shuffle"></i>Shuffle</button>
+            <button class="button-white button--play-all" @click="navigateToVideo"><i class="fa-solid fa-play"></i>Play All</button>
+            <button class="button-transparent button--shuffle" @click="navigateToVideo"><i class="fa-solid fa-shuffle"></i>Shuffle</button>
         </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: "PlaylistHeader"
+    name: "PlaylistHeader",
+    methods: {
+        navigateToVideo () {
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+        }
+    }
 }
 </script>
 
