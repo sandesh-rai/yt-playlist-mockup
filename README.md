@@ -1,7 +1,21 @@
 # Getting Started - YT Playlist Mockup
 Frontend mockup of the new YT Playlist as part of a practice project with Vue. All components are custom-made without any 3rd party libraries.
 
-### Installing
+## Demo
+
+### Responsive Demo
+![Responsive Demo](https://github.com/sandesh-rai/yt-playlist-mockup/blob/main/src/assets/img/ResponsiveDemo.gif)
+
+### Desktop View Demo
+![Desktop View Demo](https://github.com/sandesh-rai/yt-playlist-mockup/blob/main/src/assets/img/DesktopDemo.gif)
+
+### Tablet View Demo
+![Tablet View Demo](https://github.com/sandesh-rai/yt-playlist-mockup/blob/main/src/assets/img/TabletDemo.gif)
+
+### Mobile View Demo
+![Mobile View Demo](https://github.com/sandesh-rai/yt-playlist-mockup/blob/main/src/assets/img/MobileDemo.gif)
+
+## Installation
 
 You can clone this repository using __Git__:
 ```bash
