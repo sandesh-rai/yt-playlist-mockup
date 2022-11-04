@@ -3,6 +3,8 @@ Frontend mockup of the new YT Playlist as part of a practice project with Vue. A
 
 ## Demo
 
+(Please wait for the GIFs to load)
+
 ### Responsive Demo
 ![Responsive Demo](https://github.com/sandesh-rai/yt-playlist-mockup/blob/main/src/assets/img/ResponsiveDemo.gif)
 
